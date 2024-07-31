@@ -1,0 +1,460 @@
+/* Общие настройки для всех элементов */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif; 
+}
+
+/* Основные стили для body */
+body {
+    font-family: 'Roboto', sans-serif; 
+    background-color: #f5f5f5;
+    overflow-x: hidden; 
+    min-height: 100vh; 
+    position: relative;
+    margin: 0;
+}
+
+/* Стили для header */
+.header {
+    background-color: black;
+    padding: 0 20px;
+    position: relative;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.header__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.header__shapes {
+    display: flex;
+    align-items: center;
+}
+
+.header__shapes-pic1,
+.header__shapes-pic2,
+.header__shapes-pic3 {
+    margin-right: 6px;
+}
+
+.header__shapes-pic1 {
+    width: 23px;
+}
+
+.header__shapes-pic2 {
+    width: 25px;
+}
+
+.header__shapes-pic3 {
+    width: 20px;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+}
+
+.header__logo-pic {
+    width: 150px;
+    height: auto;
+    margin-right: 25px;
+}
+
+.intro {
+    height: 668px; 
+    background-color: black; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+    overflow: hidden; 
+}
+
+
+.intro__images {
+    position: relative; 
+    width: 100%;
+    height: 100%;
+}
+
+
+.intro__background-img {
+    width: auto;
+    height: 645px; 
+    object-fit: cover; 
+    margin-left: 500px; 
+}
+
+
+.intro__right-image {
+    position: absolute; 
+    top: 220px; 
+    right: 257px; 
+    width: 270px; 
+    height: 270px; 
+    z-index: 5; 
+}
+
+.intro__overlay-img {
+    position: absolute; 
+    top: 60%; 
+    right: 515px; /* Убедитесь, что значение подходит для вашего макета */
+    width: 160px;
+    height: 150px; 
+    object-fit: contain; 
+    z-index: 10; 
+}
+
+.intro__overlay-svg {
+    position: absolute; 
+    top: 120px; 
+    right: 270px; 
+    width: 245px;
+    height: auto; 
+    z-index: 15; 
+}
+
+
+.intro__rectangle-2 {
+    position: absolute;
+    top: 425px;
+    right: 370px;
+    transform: translate(-50%, -50%);
+    width: 68px;
+    height: 68px;
+    z-index: 20; 
+}
+
+.intro__ellipse-2 {
+    position: absolute; 
+    top: 388px;
+    right: 340px; 
+    width: 68px; 
+    height: 68px; 
+    z-index: 21; /
+}
+
+.intro__start-game-container {
+    position: absolute;
+    top: 403px; 
+    right: 242px; 
+    transform: translateX(-50%); 
+    z-index: 30; 
+    display: flex; 
+    align-items: center; 
+    gap: 5px; 
+}
+
+.intro__start-game-text {
+    color: #ffffff; 
+    font-size: 14px; 
+    padding: 10px; 
+    text-align: center; 
+    font-family: 'Roboto', sans-serif; 
+    font-weight: 300;
+    font-family: 'Roboto' sans-serif;
+
+}
+
+.intro__start-game-icon {
+    width: 28px; 
+    height: auto; 
+}
+
+.intro__text-icon {
+    width: 26px; 
+    height: auto; 
+    margin-left: 5px; 
+}
+
+.intro__ellipse-1 {
+    position: absolute; 
+    top: 120px; 
+    left: 543px; 
+    width: 125px; 
+    height: auto; 
+    z-index: 20; 
+    display: flex; 
+    align-items: center;
+    justify-content: center; 
+
+}
+
+.intro__ellipse-img {
+    margin-top: 10px;
+    margin-left: 5px;
+    width: 130px; 
+    height: auto;
+    display: block; 
+    object-fit: cover;
+    z-index: 5; 
+}
+.intro__mask-group {
+    position: absolute;
+    top: 30px; 
+    left: 17px; 
+    width: 100px; 
+    height: 100px; 
+    object-fit: contain; 
+    z-index: 10;
+}
+
+.intro__left-sleeve {
+    position: absolute; 
+    top: 370px; 
+    left: 450px; 
+    width: 100px; 
+    height: 100px; 
+    z-index: 25; 
+    overflow: hidden; 
+}
+
+
+.intro__left-sleeve-img {
+    width: 100%; 
+    height: auto; 
+    display: block; 
+    object-fit: cover; 
+}
+
+
+.intro__left-sleeve-overlay-img {
+    position: absolute; 
+    top: 5px; 
+    left: 5px; 
+    width: 90px; 
+    height: auto; 
+    z-index: 26; 
+}
+
+
+.intro__game-text {
+    position: absolute;
+    top: 190px; 
+    left: 100px;
+    z-index: 25;
+    max-width: 600px; 
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif; 
+}
+
+.intro__text-with-icon {
+    display: flex; 
+    align-items: flex-start; 
+    gap: 10px;
+    position: relative; 
+}
+
+.intro__game-icon {
+    width: 20px; 
+    height: auto; 
+    margin-right: 500px;
+}
+
+.intro__rectangle-icon {
+    width: 20px; 
+    height: auto; 
+}
+
+.intro__game-text h1 {
+    font-size: 40px; 
+    font-weight: 400; 
+    margin: 0; 
+    line-height: 1.2; 
+    margin-bottom: 15px; 
+    margin-left: 50px;
+}
+
+.intro__text-with-icon p {
+    font-size: 20px; 
+    font-weight: 400; 
+    line-height: 1.5;
+    margin: 0; 
+    max-width: 400px; 
+    white-space: normal; 
+    word-break: break-word; 
+    position: relative; 
+}
+
+.intro__game-icon {
+    position: absolute;
+    width: 26px;
+    height: auto;
+    top: 9px; 
+    left: -35px; 
+}
+
+.intro__rectangle-icon {
+    position: absolute;
+    width: 23px;
+    height: auto;
+    top: 45px; 
+    left: -35px; 
+}
+
+
+/* Стили для футера */
+.footer {
+    position: fixed; 
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    color: #fff;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21.09px;
+    backdrop-filter: blur(10px); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    overflow: hidden; 
+}
+
+.footer__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    position: relative; 
+}
+
+.footer__left {
+    display: flex;
+    align-items: center;
+}
+
+.footer__links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px; 
+    font-weight: 100;
+    font-family: 'Roboto' sans-serif;
+}
+
+.footer__links li {
+    display: block;
+    font-weight: 100;
+    font-family: 'Roboto' sans-serif;
+}
+
+.footer__links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 100;
+    font-family: 'Roboto' sans-serif;
+}
+
+.footer__links a:hover {
+    text-decoration: underline;
+}
+
+.footer__center {
+    text-align: center;
+    flex: 1;
+}
+
+.footer__start-game {
+    margin-top: 10px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto' sans-serif;
+}
+
+.footer__start-icon {
+    width: 24px;
+    margin-left: 10px; 
+}
+
+.footer__right {
+    text-align: right;
+}
+
+.footer__text {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-weight: 100;
+    
+}
+.footer__session {
+    margin-right: 5px; 
+    font-weight: 100;
+}
+
+.footer__year {
+    margin-left: 5px; 
+    color: #ffffff; 
+    font-weight: 100;
+}
+.footer__rating {
+    font-weight: 400;
+    color: #FFD700;
+    margin-left: 5px;
+    font-weight: 100;
+}
+
+.footer__star {
+    width: 16px;
+    margin-left: 5px;
+    color: #FFD700;
+    font-weight: 100;
+}
+
+
+
+/* Стили для дополнительного изображения под футером */
+.footer__overlay {
+    position: absolute;
+    left: 0;
+    bottom: 0; 
+    width: 100%;
+    height: 100px; 
+    overflow: hidden; 
+    display: flex;
+    justify-content: flex-start; 
+    z-index: 5; 
+}
+
+.footer__overlay-img {
+    height: 100%; 
+    object-fit: cover;
+}
+
+
+.footer__right-overlay {
+    position: absolute;
+    right: 0; 
+    bottom: 0; 
+    width: auto; 
+    height: 100px; 
+    overflow: hidden; 
+    z-index: 5; 
+}
+
+.footer__right-overlay-img {
+    height: 100%; 
+    object-fit: cover; 
+}
+
